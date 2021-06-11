@@ -1,0 +1,43 @@
+<div id="form-submit">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-75">
+        <input
+          id="first-name"
+          type="text"
+          placeholder="Your FirstName . . . . . ."
+          formControlName="firstname"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-75">
+        <input
+          id="first-name"
+          placeholder="Your LastName . . . . . ."
+          type="text"
+          formControlName="lastname"
+        />
+      </div>
+    </div>
+    <div class="col-75">
+      <input
+        id="first-name"
+        placeholder="Your City . . . . . ."
+        type="text"
+        formControlName="city"
+      />
+    </div>
+    <div class="col-75">
+      <input
+        id="first-name"
+        placeholder="Your Email . . . . . ."
+        type="text"
+        formControlName="email"
+      />
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</div>
